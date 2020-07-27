@@ -309,7 +309,7 @@
                             <!--important!!! specify the main class for the manifest!!!-->
                             <!--important!!! specify the main class for the manifest!!!-->
                             <!--important!!! specify the main class for the manifest!!!-->
-                            <mainClass>com.chenbao.rental.RentalApplication</mainClass>
+                            <mainClass>com.baocheng.rental.RentalApplication</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
