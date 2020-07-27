@@ -3,14 +3,12 @@ package com.chenbao.rental.model.entity;
 import com.alibaba.fastjson.JSONObject;
 import lombok.Data;
 
-import java.math.BigDecimal;
 import java.util.Objects;
 
 @Data
 public class Car {
 
     private String carModel;
-    private BigDecimal dailyRent;
 
     private Car() {
 
@@ -22,11 +20,6 @@ public class Car {
 
     public Car carModel(String carModel) {
         this.carModel = carModel;
-        return this;
-    }
-
-    public Car dailyRent(BigDecimal dailyRent) {
-        this.dailyRent = dailyRent;
         return this;
     }
 
