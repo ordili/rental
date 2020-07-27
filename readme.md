@@ -46,3 +46,6 @@ Content-Type: application/json
 
 # Using swagger to send request    
 swagger url is : http://localhost:8080//chenbao/swagger-ui.html 
+
+# Attention
+date format is yy-mm-dd, such as 2020-07-25 is right format.
