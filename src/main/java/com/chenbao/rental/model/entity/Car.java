@@ -10,7 +10,7 @@ public class Car {
 
     private String carModel;
 
-    private Car() {
+    public Car() {
 
     }
 
