@@ -24,7 +24,10 @@ import java.util.stream.Collectors;
 import static com.baocheng.rental.utils.Commons.GET_ACTUAL_RENTAL_QUANTITY_METHOD_NAME;
 import static com.baocheng.rental.utils.Commons.GET_ORDER_QUANTITY_METHOD_NAME;
 
-
+/**
+ * @Data July 27, 2020
+ * @Author Jidong Li
+ */
 @RestController
 @RequestMapping
 @Api(tags = {"RentalCarController"})
