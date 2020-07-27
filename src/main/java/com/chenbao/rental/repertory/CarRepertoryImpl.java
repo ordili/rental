@@ -7,7 +7,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
-import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,13 +22,11 @@ public class CarRepertoryImpl implements OperationI<Car, Long> {
         repertory = new HashMap<>(16);
 
         Car car1 = Car.Builder()
-                .carModel("Toyota Camry")
-                .dailyRent(new BigDecimal(1.0));
+                .carModel("Toyota Camry");
         repertory.put(car1, 2L);
 
         Car car2 = Car.Builder()
-                .carModel("BMW 650")
-                .dailyRent(new BigDecimal(1.0));
+                .carModel("BMW 650");
 
         repertory.put(car2, 2L);
 
