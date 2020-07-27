@@ -7,5 +7,4 @@ public class CarReq {
 
     private Car car;
     private Long quantity;
-    private CarResState state;
 }
