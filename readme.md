@@ -1,10 +1,16 @@
 # Project description  
 This is a rental car booking API service for customers to reserve a car for a period of time.  
 # How to start up the project
-java -jar rental-1.0.0-SNAPSHOT.jar
+You can compile the project through maven, or directly execute the compiled jar package.  
+java -jar rental-1.0.0-SNAPSHOT.jar  
+the jar file in the directory ./final_jar  
+# Using swagger to send request    
+swagger url is : http://localhost:8080/swagger-ui.html 
+# Using postman to send request
+import the ./docs/chenbao.postman_collection.json, the files save all requests.  
 # How to rental cars  
 send a post request as following：  
-POST /chenbao/rent/cars HTTP/1.1  
+POST /rent/cars HTTP/1.1  
 Host: localhost:8080  
 Content-Type: application/json  
 {  
@@ -26,7 +32,7 @@ Content-Type: application/json
 }  
 # How to back cars
 send a post request as following：  
-POST /chenbao/back/cars HTTP/1.1  
+POST /back/cars HTTP/1.1  
 Host: localhost:8080  
 Content-Type: application/json  
 
@@ -43,9 +49,6 @@ Content-Type: application/json
     }  
   ]  
 }  
-
-# Using swagger to send request    
-swagger url is : http://localhost:8080//chenbao/swagger-ui.html 
 
 # Attention
 date format is yy-mm-dd, such as 2020-07-25 is right format.
