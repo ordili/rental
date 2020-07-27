@@ -68,7 +68,10 @@ public class CarRepertoryController {
 
         Map<Car, Long> carQuantityMap = new HashMap<>(2);
         carQuantityMap.put(car, carRepertoryImpl.selectQuantity(car));
+
         carRes.setState(CarResState.NORMAL);
+        carRes.setCarQuantityMap(carQuantityMap);
+
         return carRes;
     }
 
@@ -92,8 +95,8 @@ public class CarRepertoryController {
         }
 
         carRes.setCarQuantityMap(carQuantityMap);
-
         carRes.setState(CarResState.NORMAL);
+
         return carRes;
     }
 
