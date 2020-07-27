@@ -15,8 +15,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.chenbao.rental.model.entity.CarResState.CARS_IS_NULL;
-
 @RestController
 @RequestMapping
 @Api(tags = {"CarRepertoryController"})
@@ -27,7 +25,7 @@ public class CarRepertoryController {
     @Autowired
     private CarRepertoryImpl carRepertoryImpl;
 
-    @PostMapping("add/cars")
+    @PostMapping("add/car")
     public CarRes addCar(@RequestBody CarReq car) {
 
         CarRes carRes = new CarRes();
@@ -40,7 +38,6 @@ public class CarRepertoryController {
 
         return carRes;
     }
-
 
     @PostMapping("add/cars")
     public CarRes addCars(@RequestBody List<CarReq> carList) {
@@ -57,6 +54,21 @@ public class CarRepertoryController {
 
         carRes.setState(CarResState.NORMAL);
 
+        return carRes;
+    }
+
+
+    @PostMapping("view/car")
+    public CarRes viewCar(@RequestBody Car car) {
+        CarRes carRes = new CarRes();
+        if (car == null) {
+            carRes.setState(CarResState.CARS_IS_NULL);
+            return carRes;
+        }
+
+        Map<Car, Long> carQuantityMap = new HashMap<>(2);
+        carQuantityMap.put(car, carRepertoryImpl.selectQuantity(car));
+        carRes.setState(CarResState.NORMAL);
         return carRes;
     }
 
@@ -95,17 +107,4 @@ public class CarRepertoryController {
         return carRes;
     }
 
-    @PostMapping("view/car")
-    public CarRes viewCar(@RequestBody Car car) {
-        CarRes carRes = new CarRes();
-        if (car == null) {
-            carRes.setState(CarResState.CARS_IS_NULL);
-            return carRes;
-        }
-
-        Map<Car, Long> carQuantityMap = new HashMap<>(2);
-        carQuantityMap.put(car, carRepertoryImpl.selectQuantity(car));
-        carRes.setState(CarResState.NORMAL);
-        return carRes;
-    }
 }
