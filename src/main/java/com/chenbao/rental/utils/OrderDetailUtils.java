@@ -168,7 +168,7 @@ public class OrderDetailUtils {
     }
 
     private static boolean orderDetailIsValid(RentalOrderDetail rentalOrderDetail) {
-        return rentalOrderDetail.getState() == NORMAL && rentalOrderDetail.getActualRentalQuantity() > 0L;
+        return rentalOrderDetail != null && rentalOrderDetail.getState() == NORMAL && rentalOrderDetail.getActualRentalQuantity() > 0L;
     }
 
 
