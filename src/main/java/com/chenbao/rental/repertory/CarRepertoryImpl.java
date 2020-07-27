@@ -5,7 +5,6 @@ import com.chenbao.rental.repertory.operatioin.OperationI;
 import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
@@ -65,6 +64,10 @@ public class CarRepertoryImpl implements OperationI<Car, Long> {
 
     @Override
     public Long selectQuantity(Car car) {
+
+        if(car == null){
+            return 0L;
+        }
 
         Long ret = 0L;
         synchronized (this) {
