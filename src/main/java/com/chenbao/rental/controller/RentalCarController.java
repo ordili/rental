@@ -86,6 +86,7 @@ public class RentalCarController {
             Long dbQuantity = carRepertoryImpl.selectQuantity(car);
 
             if (dbQuantity <= 0) {
+                rentalOrderDetail.setState(OrderDetailState.DB_QUANTITY_ILLEGAL);
                 continue;
             }
 
@@ -94,6 +95,7 @@ public class RentalCarController {
                 dbQuantity = carRepertoryImpl.selectQuantity(car);
                 // double check
                 if (dbQuantity < 0) {
+                    rentalOrderDetail.setState(OrderDetailState.DB_QUANTITY_ILLEGAL);
                     continue;
                 }
 
