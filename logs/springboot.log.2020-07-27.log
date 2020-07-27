@@ -1,0 +1,103 @@
+2020-07-27 09:58:51.763 [main] INFO  c.c.r.controller.RentalCarControllerTestBackCars - Starting RentalCarControllerTestBackCars on DESKTOP-M6UCOTD with PID 8080 (started by ordi in C:\Users\ordi\Desktop\rental)
+2020-07-27 09:58:51.771 [main] INFO  c.c.r.controller.RentalCarControllerTestBackCars - The following profiles are active: dev
+2020-07-27 09:58:53.405 [main] INFO  com.chenbao.rental.repertory.CarRepertoryImpl - The car repertory is {{"carModel":"Toyota Camry","dailyRent":1}=2, {"carModel":"BMW 650","dailyRent":1}=2}
+2020-07-27 09:58:53.412 [main] INFO  com.chenbao.rental.repertory.BorrowerRepertoryImpl - The car repertory is {}
+2020-07-27 09:58:54.175 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-27 09:58:54.507 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-27 09:58:54.866 [main] INFO  o.s.b.test.mock.web.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2020-07-27 09:58:54.866 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2020-07-27 09:58:54.891 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Completed initialization in 24 ms
+2020-07-27 09:58:54.909 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-07-27 09:58:54.942 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-07-27 09:58:54.987 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-07-27 09:58:55.185 [main] INFO  c.c.r.controller.RentalCarControllerTestBackCars - Started RentalCarControllerTestBackCars in 3.956 seconds (JVM running for 5.63)
+2020-07-27 09:58:55.813 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestMapping:[/back/cars]
+2020-07-27 09:58:55.814 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestParam:[{"backOrderDetailList":[{"car":{"carModel":"BMW 650"},"orderQuantity":2}],"borrower":{"name":"ordi"}}]
+2020-07-27 09:58:55.823 [main] INFO  com.chenbao.rental.repertory.BorrowerRepertoryImpl - insert borrower {"name":"ordi"} with updateCarQuantityMap {{"carModel":"BMW 650"}=2}
+2020-07-27 09:58:55.824 [main] INFO  com.chenbao.rental.aspect.LogAspect - Response:[{"backOrderDetailList":[{"car":{"carModel":"BMW 650"},"orderQuantity":2,"state":"NORMAL"}],"borrower":{"name":"ordi"},"state":"NORMAL"}]
+2020-07-27 09:58:55.826 [main] INFO  com.chenbao.rental.aspect.LogAspect - Request spend times : [13ms]
+2020-07-27 09:58:55.925 [main] INFO  c.c.r.controller.RentalCarControllerTestBackCars - {"backOrderId":null,"backOrderDetailList":[{"id":null,"car":{"carModel":"BMW 650","dailyRent":null},"orderQuantity":2,"state":"NORMAL"}],"borrower":{"id":null,"name":"ordi","phoneCode":null,"idNumber":null},"state":"NORMAL"}
+2020-07-27 09:58:55.966 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-27 10:03:23.616 [main] INFO  c.c.r.controller.RentalCarControllerTestBackCars - Starting RentalCarControllerTestBackCars on DESKTOP-M6UCOTD with PID 13068 (started by ordi in C:\Users\ordi\Desktop\rental)
+2020-07-27 10:03:23.617 [main] INFO  c.c.r.controller.RentalCarControllerTestBackCars - The following profiles are active: dev
+2020-07-27 10:03:25.414 [main] INFO  com.chenbao.rental.repertory.CarRepertoryImpl - The car repertory is {{"carModel":"Toyota Camry","dailyRent":1}=2, {"carModel":"BMW 650","dailyRent":1}=2}
+2020-07-27 10:03:25.421 [main] INFO  com.chenbao.rental.repertory.BorrowerRepertoryImpl - The car repertory is {}
+2020-07-27 10:03:26.136 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-27 10:03:26.448 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-27 10:03:26.739 [main] INFO  o.s.b.test.mock.web.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2020-07-27 10:03:26.739 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2020-07-27 10:03:26.753 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Completed initialization in 13 ms
+2020-07-27 10:03:26.769 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-07-27 10:03:26.794 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-07-27 10:03:26.830 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-07-27 10:03:27.006 [main] INFO  c.c.r.controller.RentalCarControllerTestBackCars - Started RentalCarControllerTestBackCars in 3.915 seconds (JVM running for 5.78)
+2020-07-27 10:03:27.533 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestMapping:[/back/cars]
+2020-07-27 10:03:27.534 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestParam:[{"backOrderDetailList":[{"car":{"carModel":"BMW 650"},"orderQuantity":2}],"borrower":{"name":"ordi"}}]
+2020-07-27 10:03:27.545 [main] INFO  com.chenbao.rental.repertory.BorrowerRepertoryImpl - insert borrower {"name":"ordi"} with updateCarQuantityMap {{"carModel":"BMW 650"}=2}
+2020-07-27 10:03:27.546 [main] INFO  com.chenbao.rental.aspect.LogAspect - Response:[{"backOrderDetailList":[{"car":{"carModel":"BMW 650"},"orderQuantity":2,"state":"NORMAL"}],"borrower":{"name":"ordi"},"state":"NORMAL"}]
+2020-07-27 10:03:27.547 [main] INFO  com.chenbao.rental.aspect.LogAspect - Request spend times : [14ms]
+2020-07-27 10:03:27.626 [main] INFO  c.c.r.controller.RentalCarControllerTestBackCars - {"backOrderId":null,"backOrderDetailList":[{"id":null,"car":{"carModel":"BMW 650","dailyRent":null},"orderQuantity":2,"state":"NORMAL"}],"borrower":{"id":null,"name":"ordi","phoneCode":null,"idNumber":null},"state":"NORMAL"}
+2020-07-27 10:03:27.661 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestMapping:[/back/cars]
+2020-07-27 10:03:27.661 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestParam:[{"backOrderDetailList":[{"car":{"carModel":"BMW 650"}}],"borrower":{"name":"ordi"}}]
+2020-07-27 10:03:27.661 [main] INFO  com.chenbao.rental.controller.RentalCarController - the back order detail state is invalid, the order detail is {"car":{"carModel":"BMW 650"},"state":"ORDER_QUANTITY_ILLEGAL"}
+2020-07-27 10:03:27.661 [main] ERROR com.chenbao.rental.controller.RentalCarController - BORROWER_IS_NULL
+2020-07-27 10:03:27.661 [main] INFO  com.chenbao.rental.aspect.LogAspect - Response:[{"backOrderDetailList":[{"car":{"carModel":"BMW 650"},"state":"ORDER_QUANTITY_ILLEGAL"}],"borrower":{"name":"ordi"},"state":"ALL_BACK_ORDER_DETAIL_IS_EXCEPTION"}]
+2020-07-27 10:03:27.662 [main] INFO  com.chenbao.rental.aspect.LogAspect - Request spend times : [1ms]
+2020-07-27 10:03:27.666 [main] INFO  c.c.r.controller.RentalCarControllerTestBackCars - {"backOrderId":null,"backOrderDetailList":[{"id":null,"car":{"carModel":"BMW 650","dailyRent":null},"orderQuantity":null,"state":"ORDER_QUANTITY_ILLEGAL"}],"borrower":{"id":null,"name":"ordi","phoneCode":null,"idNumber":null},"state":"ALL_BACK_ORDER_DETAIL_IS_EXCEPTION"}
+2020-07-27 10:03:27.671 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestMapping:[/back/cars]
+2020-07-27 10:03:27.672 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestParam:[{"backOrderDetailList":[],"borrower":{"name":"ordi"}}]
+2020-07-27 10:03:27.672 [main] ERROR com.chenbao.rental.controller.RentalCarController - BACK_ORDER_DETAIL_IS_NULL
+2020-07-27 10:03:27.672 [main] INFO  com.chenbao.rental.aspect.LogAspect - Response:[{"backOrderDetailList":[],"borrower":{"name":"ordi"},"state":"BACK_ORDER_DETAIL_IS_NULL"}]
+2020-07-27 10:03:27.672 [main] INFO  com.chenbao.rental.aspect.LogAspect - Request spend times : [1ms]
+2020-07-27 10:03:27.675 [main] INFO  c.c.r.controller.RentalCarControllerTestBackCars - {"backOrderId":null,"backOrderDetailList":[],"borrower":{"id":null,"name":"ordi","phoneCode":null,"idNumber":null},"state":"BACK_ORDER_DETAIL_IS_NULL"}
+2020-07-27 10:03:27.680 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestMapping:[/back/cars]
+2020-07-27 10:03:27.681 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestParam:[{"borrower":{"name":"ordi"}}]
+2020-07-27 10:03:27.681 [main] ERROR com.chenbao.rental.controller.RentalCarController - BACK_ORDER_DETAIL_IS_NULL
+2020-07-27 10:03:27.681 [main] INFO  com.chenbao.rental.aspect.LogAspect - Response:[{"borrower":{"name":"ordi"},"state":"BACK_ORDER_DETAIL_IS_NULL"}]
+2020-07-27 10:03:27.681 [main] INFO  com.chenbao.rental.aspect.LogAspect - Request spend times : [1ms]
+2020-07-27 10:03:27.683 [main] INFO  c.c.r.controller.RentalCarControllerTestBackCars - {"backOrderId":null,"backOrderDetailList":null,"borrower":{"id":null,"name":"ordi","phoneCode":null,"idNumber":null},"state":"BACK_ORDER_DETAIL_IS_NULL"}
+2020-07-27 10:03:27.689 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestMapping:[/back/cars]
+2020-07-27 10:03:27.689 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestParam:[{"backOrderDetailList":[],"borrower":{"name":"ordi"}}]
+2020-07-27 10:03:27.689 [main] ERROR com.chenbao.rental.controller.RentalCarController - BACK_ORDER_DETAIL_IS_NULL
+2020-07-27 10:03:27.689 [main] INFO  com.chenbao.rental.aspect.LogAspect - Response:[{"backOrderDetailList":[],"borrower":{"name":"ordi"},"state":"BACK_ORDER_DETAIL_IS_NULL"}]
+2020-07-27 10:03:27.689 [main] INFO  com.chenbao.rental.aspect.LogAspect - Request spend times : [0ms]
+2020-07-27 10:03:27.692 [main] INFO  c.c.r.controller.RentalCarControllerTestBackCars - {"backOrderId":null,"backOrderDetailList":[],"borrower":{"id":null,"name":"ordi","phoneCode":null,"idNumber":null},"state":"BACK_ORDER_DETAIL_IS_NULL"}
+2020-07-27 10:03:27.696 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestMapping:[/back/cars]
+2020-07-27 10:03:27.697 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestParam:[{"backOrderDetailList":[{"car":{"carModel":"BMW 650"},"orderQuantity":2}]}]
+2020-07-27 10:03:27.697 [main] ERROR com.chenbao.rental.controller.RentalCarController - BORROWER_IS_NULL
+2020-07-27 10:03:27.697 [main] INFO  com.chenbao.rental.aspect.LogAspect - Response:[{"backOrderDetailList":[{"car":{"carModel":"BMW 650"},"orderQuantity":2}],"state":"BORROWER_IS_NULL"}]
+2020-07-27 10:03:27.698 [main] INFO  com.chenbao.rental.aspect.LogAspect - Request spend times : [2ms]
+2020-07-27 10:03:27.700 [main] INFO  c.c.r.controller.RentalCarControllerTestBackCars - {"backOrderId":null,"backOrderDetailList":[{"id":null,"car":{"carModel":"BMW 650","dailyRent":null},"orderQuantity":2,"state":null}],"borrower":null,"state":"BORROWER_IS_NULL"}
+2020-07-27 10:03:27.705 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestMapping:[/back/cars]
+2020-07-27 10:03:27.705 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestParam:[{}]
+2020-07-27 10:03:27.706 [main] ERROR com.chenbao.rental.controller.RentalCarController - BORROWER_IS_NULL
+2020-07-27 10:03:27.706 [main] INFO  com.chenbao.rental.aspect.LogAspect - Response:[{"state":"BORROWER_IS_NULL"}]
+2020-07-27 10:03:27.706 [main] INFO  com.chenbao.rental.aspect.LogAspect - Request spend times : [1ms]
+2020-07-27 10:03:27.708 [main] INFO  c.c.r.controller.RentalCarControllerTestBackCars - {"backOrderId":null,"backOrderDetailList":null,"borrower":null,"state":"BORROWER_IS_NULL"}
+2020-07-27 10:03:27.713 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestMapping:[/back/cars]
+2020-07-27 10:03:27.713 [main] INFO  com.chenbao.rental.aspect.LogAspect - RequestParam:[{"backOrderDetailList":[{"orderQuantity":2}],"borrower":{"name":"ordi"}}]
+2020-07-27 10:03:27.714 [main] INFO  com.chenbao.rental.controller.RentalCarController - the back order detail state is invalid, the order detail is {"orderQuantity":2,"state":"CAR_IS_NULL"}
+2020-07-27 10:03:27.714 [main] ERROR com.chenbao.rental.controller.RentalCarController - BORROWER_IS_NULL
+2020-07-27 10:03:27.714 [main] INFO  com.chenbao.rental.aspect.LogAspect - Response:[{"backOrderDetailList":[{"orderQuantity":2,"state":"CAR_IS_NULL"}],"borrower":{"name":"ordi"},"state":"ALL_BACK_ORDER_DETAIL_IS_EXCEPTION"}]
+2020-07-27 10:03:27.715 [main] INFO  com.chenbao.rental.aspect.LogAspect - Request spend times : [2ms]
+2020-07-27 10:03:27.717 [main] INFO  c.c.r.controller.RentalCarControllerTestBackCars - {"backOrderId":null,"backOrderDetailList":[{"id":null,"car":null,"orderQuantity":2,"state":"CAR_IS_NULL"}],"borrower":{"id":null,"name":"ordi","phoneCode":null,"idNumber":null},"state":"ALL_BACK_ORDER_DETAIL_IS_EXCEPTION"}
+2020-07-27 10:03:27.727 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-27 10:04:35.346 [main] INFO  com.chenbao.rental.RentalApplication - Starting RentalApplication on DESKTOP-M6UCOTD with PID 6596 (C:\Users\ordi\Desktop\rental\target\classes started by ordi in C:\Users\ordi\Desktop\rental)
+2020-07-27 10:04:35.349 [main] INFO  com.chenbao.rental.RentalApplication - The following profiles are active: dev
+2020-07-27 10:04:36.608 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-07-27 10:04:36.623 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-07-27 10:04:36.624 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-07-27 10:04:36.760 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api-doc] - Initializing Spring embedded WebApplicationContext
+2020-07-27 10:04:36.761 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1352 ms
+2020-07-27 10:04:36.850 [main] INFO  com.chenbao.rental.repertory.CarRepertoryImpl - The car repertory is {{"carModel":"Toyota Camry","dailyRent":1}=2, {"carModel":"BMW 650","dailyRent":1}=2}
+2020-07-27 10:04:36.853 [main] INFO  com.chenbao.rental.repertory.BorrowerRepertoryImpl - The car repertory is {}
+2020-07-27 10:04:37.083 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-27 10:04:37.140 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-27 10:04:37.327 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/api-doc'
+2020-07-27 10:04:37.328 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-07-27 10:04:37.339 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-07-27 10:04:37.359 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-07-27 10:04:37.523 [main] INFO  com.chenbao.rental.RentalApplication - Started RentalApplication in 2.695 seconds (JVM running for 3.432)
+2020-07-27 10:06:56.308 [http-nio-8080-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api-doc] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-27 10:06:56.309 [http-nio-8080-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-07-27 10:06:56.316 [http-nio-8080-exec-10] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms

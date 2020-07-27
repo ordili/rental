@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- property是文件常量定义-->
+    <!--各项目日志保存统一父目录->路径自己设置绝对路径和相对路径都可以-->
+    <property name="LOG_HOME" value="logs"/>
+
+    <!--设置上下文,可将定义的contextName放入日志格式中 -->
+    <contextName>demo</contextName>
+
+    <!--读入logback自带的日志配置,包括颜色,基本格式,console和file,下面可用同名标签覆盖,将C:\Users\shelley\.m2\repository\org\springframework\boot\spring-boot\2.1.0.RELEASE\spring-boot-2.1.0.RELEASE.jar解压,/org/springframework/boot/logging/logback/base.xml就可看到-->
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+    <!--最大保存天数-->
+    <property name="KEEP_MAX_DAY" value="180" />
+    <!--总最大保存文件大小-->
+    <property name="KEEP_TOTAL_MAX_SIZE" value="1GB" />
+    <!--单文件最大保存文件大小-->
+    <property name="KEEP_FILE_MAX_SIZE" value="50MB" />
+
+    <!-- 覆盖base.xml中default的文件输出地址和格式 -->
+    <appender name="FILE"  class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--日志文件输出的文件名-->
+            <FileNamePattern>${LOG_HOME}/springboot.log.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <!--日志文件保留天数-->
+            <MaxHistory>${KEEP_MAX_DAY}</MaxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </encoder>
+        <!--日志文件最大的大小-->
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>${KEEP_FILE_MAX_SIZE}</MaxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+    <!--
+        <logger>用来设置某一个包或者具体的某一个类(某个第三方插件/工具)的日志打印级别、
+        以及指定<appender>。<logger>仅有一个name属性，
+        一个可选的level和一个可选的addtivity属性。
+        name:用来指定受此logger约束的某一个包或者具体的某一个类。
+        level:用来设置打印级别，大小写无关：TRACE, DEBUG, INFO, WARN, ERROR, ALL 和 OFF，
+              还有一个特俗值INHERITED或者同义词NULL，代表强制执行上级的级别。
+              如果未设置此属性，那么当前logger将会继承上级的级别。
+        addtivity:是否向上级logger传递打印信息。默认是true。
+    -->
+
+    <logger name="org.springframework.jdbc.core" level="debug" additivity="false">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </logger>
+
+    <logger name="com.springboot.web.dynamic_debug" level="debug" additivity="false">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </logger>
+
+    <!-- 配置后可以看到sql执行日志 -->
+    <logger name="com.example.demo.dao" level="debug" additivity="false">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </logger>
+
+    <!-- 特定properties文件启动时,日志的输出级别和方式 -->
+    <springProfile name="qa">
+        <root level="info">
+            <appender-ref ref="CONSOLE"/>
+            <appender-ref ref="FILE"/>
+        </root>
+    </springProfile>
+
+    <!--日志打印级别从低级到高级排序的顺序是：
+    TRACE < DEBUG < INFO < WARN < ERROR
+     系统日志的默认输出级别和方式 -->
+    <root level="info">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </root>
+
+</configuration>
